@@ -1,0 +1,12 @@
+11:27:41.850 INFO  - Processing command line option -hwspec C:\materija\RA122-2015\lab3\SDK\SDK_Export\hw\system.xml. 
+11:39:39.850 INFO  - FPGA configured successfully with bitstream "C:/materija/RA122-2015/lab3/SDK/SDK_workspace/lab3_hw_platform/download.bit" 
+11:41:11.400 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Debug Operation Not Supported on the Target
+MicroBlaze Pipeline Stalled on a Blocking Instruction or Invalid Bus Access
+    Stalled PC: 0x3ffffffc
+    Try Resetting the Processor to Continue..
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+11:44:02.568 INFO  - FPGA configured successfully with bitstream "C:/materija/RA122-2015/lab3/SDK/SDK_workspace/lab3_hw_platform/download.bit" 
+11:48:58.765 INFO  - FPGA configured successfully with bitstream "C:/materija/RA122-2015/lab3/SDK/SDK_workspace/lab3_hw_platform/download.bit" 

@@ -71,9 +71,9 @@ PERIOD TIMEGRP         "clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0"
 TS_sys_clk_pin         * 2 HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 255490 paths analyzed, 8202 endpoints analyzed, 0 failing endpoints
+ 255078 paths analyzed, 8103 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   9.370ns.
+ Minimum period is   9.089ns.
 --------------------------------------------------------------------------------
 
 
@@ -84,8 +84,8 @@ Derived Constraints for TS_sys_clk_pin
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_sys_clk_pin                 |     20.000ns|      5.000ns|     18.740ns|            0|            0|            0|       255490|
-| TS_clock_generator_0_clock_gen|     10.000ns|      9.370ns|          N/A|            0|            0|       255490|            0|
+|TS_sys_clk_pin                 |     20.000ns|      5.000ns|     18.178ns|            0|            0|            0|       255078|
+| TS_clock_generator_0_clock_gen|     10.000ns|      9.089ns|          N/A|            0|            0|       255078|            0|
 | erator_0_SIG_PLL0_CLKOUT0     |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
@@ -101,8 +101,8 @@ Clock to Setup on destination clock CLK_N
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK_N          |    9.370|         |         |         |
-CLK_P          |    9.370|         |         |         |
+CLK_N          |    9.089|         |         |         |
+CLK_P          |    9.089|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock CLK_P
@@ -110,8 +110,8 @@ Clock to Setup on destination clock CLK_P
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK_N          |    9.370|         |         |         |
-CLK_P          |    9.370|         |         |         |
+CLK_N          |    9.089|         |         |         |
+CLK_P          |    9.089|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -120,20 +120,20 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 255506 paths, 0 nets, and 10688 connections
+Constraints cover 255094 paths, 0 nets, and 10426 connections
 
 Design statistics:
-   Minimum period:   9.370ns   (Maximum frequency: 106.724MHz)
+   Minimum period:   9.089ns   (Maximum frequency: 110.023MHz)
 
 
-Analysis completed Tue Mar 20 11:22:54 2018 
+Analysis completed Fri Mar 23 11:57:33 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 313 MB
+Peak Memory Usage: 311 MB
 
 
 

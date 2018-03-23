@@ -1,0 +1,14 @@
+Files
+system.ngc
+system_axi4lite_0_wrapper.ngc
+system_clock_generator_0_wrapper.ngc
+system_debug_module_wrapper.ngc
+system_dip_switches_wrapper.ngc
+system_leds_wrapper.ngc
+system_microblaze_0_bram_block_wrapper.ngc
+system_microblaze_0_d_bram_ctrl_wrapper.ngc
+system_microblaze_0_dlmb_wrapper.ngc
+system_microblaze_0_ilmb_wrapper.ngc
+system_microblaze_0_wrapper.ngc
+system_proc_sys_reset_0_wrapper.ngc
+system_rs232_wrapper.ngc

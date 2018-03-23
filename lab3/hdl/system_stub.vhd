@@ -13,7 +13,7 @@ entity system_stub is
     RS232_Uart_1_sin : in std_logic;
     RESET : in std_logic;
     LEDS_TRI_O : out std_logic_vector(0 to 7);
-    DIP_Switches_TRI_I : in std_logic_vector(0 to 7);
+    DIP_Switches_TRI_I : in std_logic_vector(7 downto 0);
     CLK_P : in std_logic;
     CLK_N : in std_logic
   );
@@ -27,7 +27,7 @@ architecture STRUCTURE of system_stub is
       RS232_Uart_1_sin : in std_logic;
       RESET : in std_logic;
       LEDS_TRI_O : out std_logic_vector(0 to 7);
-      DIP_Switches_TRI_I : in std_logic_vector(0 to 7);
+      DIP_Switches_TRI_I : in std_logic_vector(7 downto 0);
       CLK_P : in std_logic;
       CLK_N : in std_logic
     );

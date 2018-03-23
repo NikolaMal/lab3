@@ -9,6 +9,9 @@ Reading NGO file "C:/materija/RA122-2015/lab3/implementation/system.ngc" ...
 Loading design module
 "C:/materija/RA122-2015/lab3/implementation/system_dip_switches_wrapper.ngc"...
 Loading design module
+"C:/materija/RA122-2015/lab3/implementation/system_my_peripheral_0_wrapper.ngc".
+..
+Loading design module
 "C:/materija/RA122-2015/lab3/implementation/system_rs232_wrapper.ngc"...
 Loading design module
 "C:/materija/RA122-2015/lab3/implementation/system_proc_sys_reset_0_wrapper.ngc"
@@ -34,8 +37,6 @@ Loading design module
 per.ngc"...
 Loading design module
 "C:/materija/RA122-2015/lab3/implementation/system_debug_module_wrapper.ngc"...
-Loading design module
-"C:/materija/RA122-2015/lab3/implementation/system_leds_wrapper.ngc"...
 Loading design module
 "C:/materija/RA122-2015/lab3/implementation/system_microblaze_0_bram_block_wrapp
 er.ngc"...
@@ -103,10 +104,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   4
 
-Total memory usage is 210172 kilobytes
+Total memory usage is 209148 kilobytes
 
 Writing NGD file "system.ngd" ...
-Total REAL time to NGDBUILD completion:  29 sec
-Total CPU time to NGDBUILD completion:   28 sec
+Total REAL time to NGDBUILD completion:  32 sec
+Total CPU time to NGDBUILD completion:   32 sec
 
 Writing NGDBUILD log file "system.bld"...

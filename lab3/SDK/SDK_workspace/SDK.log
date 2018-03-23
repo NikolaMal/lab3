@@ -10,3 +10,50 @@ MicroBlaze Pipeline Stalled on a Blocking Instruction or Invalid Bus Access
 
 11:44:02.568 INFO  - FPGA configured successfully with bitstream "C:/materija/RA122-2015/lab3/SDK/SDK_workspace/lab3_hw_platform/download.bit" 
 11:48:58.765 INFO  - FPGA configured successfully with bitstream "C:/materija/RA122-2015/lab3/SDK/SDK_workspace/lab3_hw_platform/download.bit" 
+11:52:33.787 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:02:20.023 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+10:01:10.867 INFO  - Processing command line option -hwspec D:\materija\RA218-2015\lab3\SDK\SDK_Export\hw\system.xml. 
+10:01:13.537 INFO  - The hardware specification for project 'lab3_hw_platform' is different from D:\materija\RA218-2015\lab3\SDK\SDK_Export\hw\system.xml. 
+10:01:13.633 INFO  - Copied contents of D:\materija\RA218-2015\lab3\SDK\SDK_Export\hw\system.xml into \lab3_hw_platform\system.xml. 
+10:01:13.633 INFO  - Copied contents of D:\materija\RA218-2015\lab3\SDK\SDK_Export\hw\system.bit into \lab3_hw_platform\system.bit. 
+10:01:13.648 INFO  - Copied contents of D:\materija\RA218-2015\lab3\SDK\SDK_Export\hw\system_bd.bmm into \lab3_hw_platform\system_bd.bmm. 
+10:01:14.257 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+10:01:16.603 INFO  - Updating MSS for Board Support Package Project: hello_world_bsp.
+		 The following driver assignments were removed:
+			Peripheral Instance: leds, driver: gpio_v3_01_a.
+		 The following new driver assignments were made:
+			Peripheral Instance: my_peripheral_0, driver: generic_v1_00_a.
+ 
+10:01:17.526 INFO  - Updating hardware inferred compiler options for hello_world. 
+10:01:17.584 INFO  - Clearing existing target manager status. 
+10:14:41.142 ERROR - FPGA Configuration failed.Failed to download the bit file
+
+    DONE bit didn't go HIGH after programming FPGA
+ 
+10:15:01.994 INFO  - FPGA configured successfully with bitstream "C:/materija/RA122-2015/lab3/SDK/SDK_workspace/lab3_hw_platform/download.bit" 
+10:16:40.139 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:58:26.546 INFO  - Processing command line option -hwspec C:\materija\RA122-2015\lab3\SDK\SDK_Export\hw\system.xml. 
+11:58:27.319 INFO  - The hardware specification for project 'lab3_hw_platform' is different from C:\materija\RA122-2015\lab3\SDK\SDK_Export\hw\system.xml. 
+11:58:27.331 INFO  - Copied contents of C:\materija\RA122-2015\lab3\SDK\SDK_Export\hw\system.xml into \lab3_hw_platform\system.xml. 
+11:58:27.335 INFO  - Copied contents of C:\materija\RA122-2015\lab3\SDK\SDK_Export\hw\system.bit into \lab3_hw_platform\system.bit. 
+11:58:27.337 INFO  - Copied contents of C:\materija\RA122-2015\lab3\SDK\SDK_Export\hw\system_bd.bmm into \lab3_hw_platform\system_bd.bmm. 
+11:58:27.590 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+11:58:29.492 INFO  - Updating hardware inferred compiler options for hello_world. 
+11:58:29.528 INFO  - Clearing existing target manager status. 
+12:11:16.784 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Unknown Error
+ 
+12:11:32.350 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: Could not detect MDM peripheral on hardware. Please check:
+    1. If FPGA is configured correctly
+    2. MDM Core is instantiated in the design
+    3. If the correct FPGA is referred, in case of multiple FPGAs
+    4. If the correct MDM is referred, in case of a multiple MDM system
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+12:12:21.236 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

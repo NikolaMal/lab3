@@ -1,0 +1,7 @@
+-batch 
+-create vga_ctrl 
+-ver 1.00.a 
+-dir "C:\materija\RA122-2015\lab3" 
+-lang vhdl 
+-bus axi4lite s 
+-xps 

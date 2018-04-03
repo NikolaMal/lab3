@@ -160,8 +160,9 @@ component vga_top is
     );
   port (
     clk_i               : in  std_logic;
-	 axi_clk					: in std_logic;
+	 
     reset_n_i           : in  std_logic;
+	  write_clk 				: in std_logic;
     --
     direct_mode_i       : in  std_logic; -- 0 - text and graphics interface mode, 1 - direct mode (direct force RGB component)
     dir_red_i           : in  std_logic_vector(7 downto 0);
@@ -200,6 +201,8 @@ component vga_top is
 end component;
 
   --USER signal declarations added here, as needed for user logic
+  
+  signal 
 
 begin
 
@@ -216,7 +219,7 @@ generic (
     )
 port map(
 	clk_i => clk_in,
-	axi_clk => Bus2IP_Clk,
+	 write_clk 	=> Bus2IP_Clk,
 	reset_n_i => rst_in,
 	vga_hsync_o => vga_sync_h_out,
    vga_vsync_o => vga_sync_v_out,

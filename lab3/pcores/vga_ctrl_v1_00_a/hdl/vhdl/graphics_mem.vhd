@@ -22,7 +22,8 @@ entity graphics_mem is
     );
   port(
     clk_i     : in  std_logic;
-    reset_n_i : in  std_logic;     
+    reset_n_i : in  std_logic;
+	 write_clk : in  std_logic;
     wr_addr_i : in  std_logic_vector(MEM_ADDR_WIDTH-1 downto 0);     -- write address input
     rd_addr_i : in  std_logic_vector(MEM_ADDR_WIDTH-1 downto 0);     -- read address input
     wr_data_i : in  std_logic_vector(MEM_DATA_WIDTH-1 downto 0);     -- Write data output
@@ -54,6 +55,22 @@ architecture arc_graphics_mem of graphics_mem is
   signal index_2   : natural;
   
 begin
+
+DP_WR_GRAPHICS_MEM : process (write_clk) begin
+	 if (rising_edge(write_clk)) then
+	 if (we_i = '1') then
+	 graphics_mem(wr_addr_i) <= wr_data_i;
+	 end if;
+	 end if;
+	 end process;
+
+	 DP_RD_GRAPHICS_MEM : process (clk_i) begin
+	 if (rising_edge(clk_i)) then
+	 rd_addr <= mem_up_addr;
+	 end if;
+ end process;
+ rd_value <= graphics_mem(conv_integer(rd_addr));
+ rd_data_o <= rd_value(conv_integer(mem_lo_addr));
 
   -- get address for graphics mem based on memory format
   mem_up_addr <= "000"   & rd_addr_i(MEM_ADDR_WIDTH-1 downto 3) when (MEM_DATA_WIDTH = 8) else
